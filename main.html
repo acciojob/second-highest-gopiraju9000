@@ -11,7 +11,7 @@
 	<script>
 		function secondHighest(arr) {
 			let max = Number.MIN_SAFE_INTEGER;
-            let secondMax
+            let secondMax = Number.MIN_SAFE_INTEGER;
 			for(let i = 0;i < arr.length; i++) {
 				if(arr[i] > max) {
 					secondMax = max;
@@ -21,8 +21,7 @@
 					secondMax = arr[i];
 				}
 			}
-
-			return secondMax === Number.MIN_SAFE_INTEGER ? undefined : Number.MIN_SAFE_INTEGER  ;
+			return secondMax === Number.MIN_SAFE_INTEGER ? undefined :secondMax  ;
 		}
 
 		function Main() {
